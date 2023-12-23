@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Custom ESLint rules lib",
   "main": "dist/index.js",
-  "type": "module",
   "files": [
     "src/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rm -Rf ./dist/ && mkdir ./dist &&  tsc -p tsconfig.json",
     "test": "jest --passWithNoTests"
   },
   "keywords": [
@@ -18,7 +17,7 @@
     "linter",
     "lint"
   ],
-  "author": "Your Name",
+  "author": "Dominik Rabus",
   "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/parser": "^6.15.0",

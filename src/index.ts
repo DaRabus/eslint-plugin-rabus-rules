@@ -11,17 +11,6 @@ import {
  *
  */
 
-module.exports = {
-  /**
-   * Apply the imported custom rules here.
-   *
-   * For example (using the example import above):
-   *
-   * rules: {
-   *  [myCustomRuleName]: myCustomRule
-   * }
-   */
-  rules: {
-    [noDivInTypographyName]: noDivInTypography
-  }
+export const rules = {
+  [noDivInTypographyName]: noDivInTypography
 };
