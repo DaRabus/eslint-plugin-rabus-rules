@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-dx-rules",
+  "version": "1.0.0",
+  "description": "Custom ESLint rules lib",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "linter",
+    "lint"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.11",
+    "@typescript-eslint/experimental-utils": "5.62.0",
+    "@typescript-eslint/parser": "6.15.0",
+    "eslint": "8.56.0",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.1",
+    "typescript": "5.3.3"
+  }
+}
