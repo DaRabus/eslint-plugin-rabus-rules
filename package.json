@@ -1,6 +1,6 @@
 {
   "name": "@rabus/eslint-plugin-dx-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom ESLint rules lib",
   "main": "dist/index.js",
   "files": [
