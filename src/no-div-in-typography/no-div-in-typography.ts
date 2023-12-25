@@ -1,10 +1,8 @@
-import {ESLintUtils} from '@typescript-eslint/experimental-utils';
+import {ESLintUtils, TSESLint} from '@typescript-eslint/experimental-utils';
 
 export const RULE_NAME = 'no-div-in-typography';
 
-export const rule = ESLintUtils.RuleCreator(() => __filename)({
-  name: RULE_NAME,
-  meta: {
+export const rule: TSESLint.RuleModule<'missingComponentOrVariantProp' | 'disallowDiv', any[]> = ESLintUtils.RuleCreator(() => __filename)({  meta: {
     type: 'problem',
     docs: {
       description:
@@ -19,6 +17,7 @@ export const rule = ESLintUtils.RuleCreator(() => __filename)({
         'The "component" prop should not be "div" in the Typography component.'
     }
   },
+  name: RULE_NAME,
   defaultOptions: [],
   create(context) {
     return {

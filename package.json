@@ -7,7 +7,7 @@
     "src/**/*"
   ],
   "scripts": {
-    "build": "rm -Rf ./dist/ && mkdir ./dist &&  tsc -p tsconfig.json",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup",
     "test": "jest --passWithNoTests"
   },
   "keywords": [
