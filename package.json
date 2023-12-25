@@ -1,8 +1,15 @@
 {
   "name": "@rabus/eslint-plugin-dx-rules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Custom ESLint rules lib",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "files": [
     "src/**/*"
   ],
