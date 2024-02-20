@@ -6,15 +6,15 @@ export const rule: TSESLint.RuleModule<'missingComponentOrVariantProp' | 'disall
     type: 'problem',
     docs: {
       description:
-        'Enforces that the Typography component must have both "component" and "variant" props, and "component" should not be "div".',
+        `Enforces that the Typography component must have both "component" and "variant" props, and "component" should not be "div".`,
       recommended: 'error'
     },
     schema: [],
     messages: {
       missingComponentOrVariantProp:
-        'Both "component" and "variant" props are mandatory for the Typography component.',
+        `Both "component" and "variant" props are mandatory for the Typography component.`,
       disallowDiv:
-        'The "component" prop should not be "div" in the Typography component.'
+        `The "component" prop should not be "div" in the Typography component.`
     }
   },
   name: RULE_NAME,
